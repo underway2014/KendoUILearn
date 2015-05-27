@@ -18,6 +18,15 @@ namespace KendoUILearn.Models
         public int Age { get; set; }
         public string Sex { get; set; }
     }
+    public class BlogModel
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Type { get; set; }
+        public string AddTime { get; set; }
+        public string Content { get; set; }
+    }
     public class CustomDBContext:DbContext
     {
         public CustomDBContext():base("CustomDB")
@@ -25,5 +34,6 @@ namespace KendoUILearn.Models
 
         }
         public DbSet<StudentModel> Students { get; set; }
+        public DbSet<BlogModel> BlogS { get; set; }
     }
 }
