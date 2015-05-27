@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/kendoUI/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendoUI/styles/kendo.default.min.css" rel="stylesheet" />
+    <script src="~/Content/kendoUI/js/jquery.min.js"></script>
+    <script src="~/Content/kendoUI/js/kendo.web.min.js"></script>
+</head>
+<body>
+    <input id="datepicker" />
+    <div id="container">
+        <input data-role="autocomplete" data-source="['One', 'Two']" />
+    </div>
+    <script>
+        kendo.init($("#container"));
+        $(function () {
+            $("#datepicker").kendoDatePicker();
+        });
+    </script>
+</body>
+</html>
