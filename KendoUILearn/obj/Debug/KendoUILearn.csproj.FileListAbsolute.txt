@@ -78,3 +78,4 @@ D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.dll
 D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Net.Http.Formatting.xml
 D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.xml
 D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.Cors.xml
+D:\c#project\5.25\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.csprojResolveAssemblyReference.cache
