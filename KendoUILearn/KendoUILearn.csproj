@@ -1144,6 +1144,7 @@
     <Content Include="Views\Kendo\Index.cshtml" />
     <Content Include="Views\Kendo\Students.cshtml" />
     <Content Include="Views\Kendo\Editor.cshtml" />
+    <Content Include="Views\Kendo\BlogList.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

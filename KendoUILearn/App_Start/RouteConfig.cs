@@ -16,7 +16,7 @@ namespace KendoUILearn
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Kendo", action = "Students", id = UrlParameter.Optional }
+                defaults: new { controller = "Kendo", action = "Editor", id = UrlParameter.Optional }
             );
         }
     }

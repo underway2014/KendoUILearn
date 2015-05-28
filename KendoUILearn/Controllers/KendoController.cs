@@ -35,5 +35,9 @@ namespace KendoUILearn.Controllers
         {
             return View();
         }
+        public ActionResult BlogList()
+        {
+            return View(db.BlogS.ToList());
+        }
 	}
 }
