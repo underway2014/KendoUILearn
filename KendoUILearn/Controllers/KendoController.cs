@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 
 using KendoUILearn.Models;
+using System.Web.Http.Cors;
+using KendoUILearn.Helper;
 
 namespace KendoUILearn.Controllers
 {
@@ -31,13 +33,35 @@ namespace KendoUILearn.Controllers
         {
             return View();
         }
-        public ActionResult AddBlog()
+        [HttpPost]
+        public ActionResult AddBlog(string type,string title,string content,string time)
         {
-            return View();
+            var res = -1;
+            BlogModel md = new BlogModel
+            {
+                Type = type,
+                Title = title,
+                Content = Server.UrlDecode(content),
+                AddTime = DateTime.Now.ToString()
+            };
+            db.BlogS.Add(md);
+            res = db.SaveChanges();
+            return Content(res.ToString()) ;
         }
         public ActionResult BlogList()
         {
-            return View(db.BlogS.ToList());
+            return View();
+        }
+        [EnableCors(origins: "http://localhost:4244/index.html", headers: "*", methods: "*")]
+        public ActionResult BlogListData()
+        {
+            return Json(db.BlogS.ToList(), JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonpResult GetData()
+        {
+            JsonpResult result = new JsonpResult(db.BlogS.ToList());
+            return result;
         }
 	}
 }

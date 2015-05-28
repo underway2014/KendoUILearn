@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+	<title>play music</title>
+	<script src="js/jquery-1.10.2.min.js"></script>
+    <style>
+        .cell{
+            border:solid 1px #aacc00;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div>My Blog</div>
+    <div class="list">
+        <!--<div class="cell">
+            <div>type</div>
+            <div>title</div>
+            <div>content</div>
+            <div>adtime</div>
+        </div>-->
+    </div>
+   
+    
+    <script>
+        $.ajax({
+            url: "http://localhost:5275/Kendo/GetData",
+            cache: false,
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            jsonpCallback: "flightHandler",
+            success: function (data) {
+                alert('success'+data);
+                //data = decodeURI(data);
+                alert('success' + data);
+                var html = "";
+                $.each(data, function (i, item) {
+                    html += '<div class="cell"><div>' + item.Type + '</div>\
+	                        <div>' + item.Title + '</div>\
+                            <div>' + item.Content + '</div>\
+                            <div>' + item.AddTime + '</div></div>';
+                    html += '<hr />';
+                });
+                $('.list').append(html);
+            }
+        });
+        
+    </script>
+</body>
+</html>

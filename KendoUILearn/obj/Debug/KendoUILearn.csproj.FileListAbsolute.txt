@@ -34,7 +34,6 @@ D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\zh-Hans\System.Web.WebPages.Depl
 D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 D:\c#project\5.25\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.dll
 D:\c#project\5.25\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.pdb
-D:\c#project\5.25\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.csprojResolveAssemblyReference.cache
 G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\KendoUILearn.dll.config
 G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\KendoUILearn.dll
 G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\KendoUILearn.pdb
@@ -72,3 +71,10 @@ G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\zh-Hans\System.Web.WebPages.Razo
 G:\C#Project\5.27\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.csprojResolveAssemblyReference.cache
 G:\C#Project\5.27\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.dll
 G:\C#Project\5.27\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.pdb
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Net.Http.Formatting.dll
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Cors.dll
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.Cors.dll
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.dll
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Net.Http.Formatting.xml
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.xml
+D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.Cors.xml

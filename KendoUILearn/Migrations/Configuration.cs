@@ -45,9 +45,9 @@ namespace KendoUILearn.Migrations
             }
 
             var blogList = new BlogModel[]{
-                new BlogModel{Type="1",Title="KendoUI blog",Content="<img src='~/Content/Source/Images/Koala.jpg' width='100px'/><p>Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.<br />In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,and image handling. The widget <strong>outputs identical HTML</strong> across all major browsers, followsaccessibility standards and provides API for content manipulation.</p>",
+                new BlogModel{Type="1",Title="KendoUI blog",Content="<img src='http://localhost:5275/Content/Source/Images/Koala.jpg' width='100px'/><p>Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.<br />In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,and image handling. The widget <strong>outputs identical HTML</strong> across all major browsers, followsaccessibility standards and provides API for content manipulation.</p>",
                 AddTime="2015.5.27"},
-                new BlogModel{Type="2",Title="我们都是好孩子",Content="<p>果可悲晨不哨之溪水日在校园</p><img src='~/Content/Source/Images/Koala.jpg' width='100px'/><p>Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.<br />In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,and image handling. The widget <strong>outputs identical HTML</strong> across all major browsers, followsaccessibility standards and provides API for content manipulation.</p>",
+                new BlogModel{Type="2",Title="我们都是好孩子",Content="<p>果可悲晨不哨之溪水日在校园</p><img src='http://localhost:5275/Content/Source/Images/Koala.jpg' width='100px'/><p>Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.<br />In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,and image handling. The widget <strong>outputs identical HTML</strong> across all major browsers, followsaccessibility standards and provides API for content manipulation.</p>",
                 AddTime="2015.6.27"}
             };
             foreach(var o in blogList)
