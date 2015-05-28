@@ -79,3 +79,10 @@ D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Net.Http.Formatting.xml
 D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.xml
 D:\c#project\5.25\KendoUILearn\KendoUILearn\bin\System.Web.Http.Cors.xml
 D:\c#project\5.25\KendoUILearn\KendoUILearn\obj\Debug\KendoUILearn.csprojResolveAssemblyReference.cache
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Net.Http.Formatting.dll
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Web.Cors.dll
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Web.Http.Cors.dll
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Web.Http.dll
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Net.Http.Formatting.xml
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Web.Http.xml
+G:\C#Project\5.27\KendoUILearn\KendoUILearn\bin\System.Web.Http.Cors.xml
