@@ -128,19 +128,27 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Source\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Models\FileBrowserEntry.cs" />
+    <Compile Include="Models\FitImageResizer.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageBrowserController.cs" />
+    <Compile Include="Models\ImageSize.cs" />
     <Compile Include="Controllers\KendoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\JsonpResult.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DirectoryBrowser.cs" />
+    <Compile Include="Models\EntryType.cs" />
     <Compile Include="Models\StudentModel.cs" />
+    <Compile Include="Models\ThumbnailCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -997,7 +1005,7 @@
     <Content Include="Content\kendoUI\styles\Uniform\sprite_2x.png" />
     <Content Include="Content\kendoUI\styles\Uniform\sprite_kpi.png" />
     <Content Include="Content\kendoUI\styles\Uniform\sprite_kpi_2x.png" />
-    <Content Include="Content\Source\Images\Koala.jpg" />
+    <Content Include="Content\Images\Koala.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

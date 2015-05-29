@@ -32,18 +32,48 @@
         <input id="color" value="1"> 
         <input id="title" type="text" value="title"/>
         <textarea id="editor" rows="10" cols="30" style="height:440px">
-            <img src="http://localhost:5275/Content/Source/Images/Koala.jpg" width="100px" />
+            @*<img src="http://localhost:5275/Content/Source/Images/Koala.jpg" width="100px" />
             <p>
                 Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.<br />
                 In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,
                 and image handling. The widget <strong>outputs identical HTML</strong> across all major browsers, follows
                 accessibility standards and provides API for content manipulation.
-            </p>
+            </p>*@
         </textarea>
         <script>
             $(document).ready(function () {
                 // create Editor from textarea HTML element with default set of tools
-                $("#editor").kendoEditor({ resizable: true });
+               // $("#editor").kendoEditor({ resizable: true });
+                /////////////////////
+
+                $('#editor').kendoEditor({
+                    imageBrowser: {
+                        messages: {
+                            dropFilesHere: "Drop files here"
+                        },
+                        transport: {
+                            read: "/ImageBrowser/Read",
+                            destroy: {
+                                url: "/ImageBrowser/Destroy",
+                                type: "POST"
+                            },
+                            create: {
+                                url: "/ImageBrowser/Create",
+                                type: "POST"
+                            },
+                            thumbnailUrl: "/ImageBrowser/Thumbnail",
+                            uploadUrl: "/ImageBrowser/Upload",
+                            imageUrl: "/ImageBrowser/Image?path={0}"
+                        },
+                        change: function () {
+                            console.log("path {0}",this.value());
+                        }
+
+                    }
+                });
+
+
+                //////////////////////////
             });
         </script>
     </div>
@@ -103,6 +133,9 @@
             });
         });
         //string type,string title,string content,string time
+
+        
+
     </script>
 </body>
 </html>
